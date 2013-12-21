@@ -77,6 +77,7 @@ thirdparty_files := \
 include $(CLEAR_VARS)
 LOCAL_MODULE     := libOpenVG
 LOCAL_CFLAGS     := $(cflags)
+LOCAL_CPPFLAGS   := -std=gnu++11
 LOCAL_C_INCLUDES := $(c_includes)
 LOCAL_LDLIBS     := -llog -lGLESv1_CM -lGLESv2
 LOCAL_SRC_FILES  := $(glu_files) $(src_files) $(thirdparty_files)
